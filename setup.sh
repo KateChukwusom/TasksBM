@@ -49,7 +49,6 @@ virtual_env() {
     }
 
 
-log "=================================================================================================="
 
 #Install the latest version of pip in the environment"
 
@@ -60,7 +59,7 @@ pip_install() {
         log_info "The latest version of pip"
     }
 
-log "===================================================================================================="
+
 
 #Check if .gitignore exists and create one if it does not exist
 git_ignore() {
@@ -117,8 +116,6 @@ EOF
     }
 
 
-log "======================================================================================================================================="
-
 #Install python package - pandas
 install_pandas() {
     if pip list | grep -q pandas; then
@@ -130,7 +127,6 @@ install_pandas() {
     fi
     }
 
-log "========================================================================================================================================"
 #install requests package -
 
 install_requests() {
