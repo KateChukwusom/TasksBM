@@ -4,10 +4,10 @@ This script automatically sets up development environment for new engineers that
 ## What The Script Does
 -- The script automatically:
 
---- Creates a python virtual environment
---- Upgrades Pip
---- Sets up .gitignore file
---- Installs Python Packages
+-- Creates a python virtual environment
+-- Upgrades Pip
+-- Sets up .gitignore file
+-- Installs Python Packages
 
 ## How To Execute
 -- chmod +x setup.sh
