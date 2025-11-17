@@ -122,7 +122,7 @@ install_pandas() {
         log_info "Pandas is installed"
     else
         log_info "Pandas is not installed, Installing pandas now"
-         pip install pandas
+         pip install pandas > /dev/null 2>&1
         log_info "Pandas installation complete"
     fi
     }
@@ -136,7 +136,7 @@ install_requests() {
         log_info "Requests package already installed"
     else
         log_info "Requests package not found, installing one now"
-        pip install requests
+        pip install requests > /dev/null 2>&1
 
         log_info "Requests Package successfully Installed"
     fi
