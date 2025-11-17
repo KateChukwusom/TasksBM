@@ -22,7 +22,7 @@ chmod +x setup.sh
 
 ## Run the script:
 
-./setup.sh
+./setup.sh 
 
 ## Challenges
 
