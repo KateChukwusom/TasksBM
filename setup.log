@@ -31,3 +31,18 @@
 - [WARNING] -Sun Nov 16 22:44:10 UTC 2025- Requests package not found, installing one now
 - [INFO] -Sun Nov 16 22:44:10 UTC 2025- Requests Package successfully Installed
 - [INFO] -Sun Nov 16 22:44:10 UTC 2025- Environment Ready- SET UP DONE
+- [INFO] -Mon Nov 17 11:06:26 UTC 2025- Python environment exists, activating immediately
+- [INFO] -Mon Nov 17 11:08:26 UTC 2025- Python environment exists, activating immediately
+- [INFO] -Mon Nov 17 11:16:59 UTC 2025- Python environment exists, activating immediately
+- [INFO] -Mon Nov 17 11:17:01 UTC 2025- The latest version of pip already installed
+- [WARNING] -Mon Nov 17 11:17:01 UTC 2025- .gitignore file already exist, skipping creation.
+- [INFO] -Mon Nov 17 11:17:02 UTC 2025- Pandas is installed
+- [INFO] -Mon Nov 17 11:17:03 UTC 2025- Requests package already installed
+- [INFO] -Mon Nov 17 11:17:03 UTC 2025- Environment Ready- SET UP DONE
+- [INFO] -Mon Nov 17 11:18:02 UTC 2025- Python environment exists, activating immediately
+- [INFO] -Mon Nov 17 11:18:03 UTC 2025- The latest version of pip already installed
+- [WARNING] -Mon Nov 17 11:18:03 UTC 2025- File does not exist, creating one now
+- [INFO] -Mon Nov 17 11:18:03 UTC 2025- Git ignore file created successfully, contains all standard ignore rules for python.
+- [INFO] -Mon Nov 17 11:18:04 UTC 2025- Pandas is installed
+- [INFO] -Mon Nov 17 11:18:05 UTC 2025- Requests package already installed
+- [INFO] -Mon Nov 17 11:18:05 UTC 2025- Environment Ready- SET UP DONE

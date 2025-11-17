@@ -43,8 +43,8 @@ virtual_env() {
     source "$VENV_DIR/bin/activate" || source "$VENV_DIR/scripts/activate"
     else
         log_info "Python virtual environment does not exist... Creating one now"
-    python3 -m venv "$VENV_DIR" && source "$VENV_DIR/bin/activate"
-    log_info "Python virtual Environment created and activated sucessfully" 
+    python3 -m venv "$VENV_DIR" > /dev/null 2>&1 && source "$VENV_DIR/bin/activate"
+    log_info "Python virtual Environment created and activated sucessfully"
     fi
     }
 
@@ -54,9 +54,9 @@ virtual_env() {
 
 pip_install() {
 
-   pip install --upgrade pip || python3 pip install --upgrade pip
+   python3 -m pip install --upgrade pip > /dev/null 2>&1
 
-        log_info "The latest version of pip"
+        log_info "The latest version of pip already installed"
     }
 
 
@@ -118,33 +118,32 @@ EOF
 
 #Install python package - pandas
 install_pandas() {
-    if pip list | grep -q pandas; then
+    if python3 -c "import pandas" > /dev/null 2>&1; then
         log_info "Pandas is installed"
     else
-        log_warning "Pandas is not installed, Installing pandas now"
+        log_info "Pandas is not installed, Installing pandas now"
          pip install pandas
         log_info "Pandas installation complete"
     fi
     }
 
-#install requests package -
+#install requests package - Check if exists, if not, Install.
 
 install_requests() {
 
-    if pip list | grep -q requests; then
+    if python3 -c "import requests" >/dev/null 2>&1; then
 
         log_info "Requests package already installed"
     else
-        log_warning "Requests package not found, installing one now"
+        log_info "Requests package not found, installing one now"
         pip install requests
 
         log_info "Requests Package successfully Installed"
     fi
     }
 
-
+#Define the main function called set_up that calls other functions subsequently
 set_up() {
-
     virtual_env
     pip_install
     git_ignore
@@ -154,7 +153,7 @@ set_up() {
 log_info "Environment Ready- SET UP DONE"
 
     }
-
+#Call the function
 set_up
 
 
